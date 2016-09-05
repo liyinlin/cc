@@ -1,0 +1,47 @@
+body,
+div,
+ul,
+ol,
+li,
+a,
+p,
+img,
+span,
+input,
+table,
+tr,
+td,
+h2,
+h1,
+h3,
+h4,
+h5,
+h6,html
+ {
+    margin: 0;
+    padding: 0;
+}
+body{
+	display: none;
+}
+#bodytes{width: 32rem; position: relative;}
+#gs{width: 32rem; height: 16rem; overflow: hidden;}
+#gs img{width: 32rem; height: 16rem; float: left;}
+.mengban{width: 32rem; height: 3rem; background: black;position: absolute; top: 13.25rem; opacity: 0.5;}
+#p1{width: 22.4rem; height: 3rem; font-size: 1rem; color:#ffffff;text-align: center; font-weight: bold; position: absolute;top: 13.7rem; left:-2rem;line-height: 2.05rem;}
+#uls{width: 6.4rem; height: 3rem;position: absolute; top: 13.4rem; left: 25.25rem;}
+#uls li{width: 1.3rem; height: 1.3rem; background: #888d90; float: left; margin-left: 0.75rem;margin-top: 0.7rem; border-radius: 50%;}
+#uls .lis{width: 1.3rem; height: 1.3rem; background: #FFFFFF; float: left; margin-left: 0.75rem;margin-top: 0.7rem; border-radius: 50%;}
+#tuijia{width: 30.4rem; height: 3.5rem; border-bottom:1px solid #dedede;margin-top: 0.1rem; margin: 0 auto;}
+#tuijia img{ float: left; margin: 0.5rem 0.85rem}
+.ps1{ float: left; font-size: 1.2rem; color: #333333; margin-top: 0.3rem; font-weight:500;}
+.ps2{float: right; font-size: 0.9rem; color: #333333; margin-top: 0.55rem; font-weight: 500;}
+#tsept{width: 30.4rem; margin: 0 auto;}
+.tuwen{width: 30.6rem ; border-bottom: 1px solid #dedede; margin-top: 0.5rem; position: relative;}
+.tu{width: 13.8rem; height: 11rem; margin-left: -17rem;}
+.zanting{position: absolute; top: 3.5rem; left: 4.6rem;}
+.luyu{font-size: 0.9rem; color: black; position: absolute;top: 1rem; left: 15rem; font-weight: bold;}
+.yinghan{font-size: 0.8rem; color: #bbbbbb;position: absolute;top: 3.4rem; left: 15rem;}
+.luyus{font-size: 0.8rem; color: #bbbbbb;position: absolute;top: 5rem; left: 15rem;}
+
+ 

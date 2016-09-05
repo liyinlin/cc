@@ -1,0 +1,225 @@
+body:after {
+    content: "";
+    height: 0;
+    clear: both;
+    overflow: hidden;
+}
+
+.outer {
+    width: 100%;
+    overflow: hidden;
+}
+
+#container {
+    width: 51.25rem;
+    overflow: hidden;
+    -webkit-transform: translate3d(-19.25rem, 0, 0);
+}
+
+
+/*左侧导航栏*/
+
+#leftside {
+    width: 17.25rem;
+    background: #1c1d22;
+    float: left;
+    padding: 0 1rem;
+}
+
+.username {
+    border-bottom: 0.1rem solid #dedede;
+    padding-bottom: 2rem;
+}
+
+.username a {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+}
+
+.username img {
+    float: left;
+    width: 6rem;
+    height: 6rem;
+}
+
+.username span {
+    float: left;
+    color: #fff;
+    margin: 2.75rem 0 0 2.2rem;
+    font-size: 1.15rem;
+}
+
+.home,
+.wdsc,
+.gkjl,
+.wdyy,
+.yjfk,
+.sz,
+.tc {
+    width: 100%;
+    height: 2.2rem;
+    margin-top: 1.7rem;
+    padding-left: 3.3rem;
+    text-align: left;
+    line-height: 2.2rem;
+    font-size: 1.5rem;
+    background-size: 2.2rem 2.2rem;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.home a {
+    color: #ff6600;
+}
+
+.wdsc a,
+.gkjl a,
+.wdyy a,
+.yjfk a,
+.sz a,
+.tc a {
+    color: #fff;
+}
+
+.home {
+    background-image: url(../img/btn_leftmenu_clickshouye@2x.png);
+}
+
+.wdsc {
+    background-image: url(../img/btn_leftmenu_shoucang@2x.png);
+}
+
+.gkjl {
+    background-image: url(../img/btn_leftmenu_lixian@2x.png);
+}
+
+.wdyy {
+    background-image: url(../img/btn_leftmenu_yuyue@2x.png);
+}
+
+.yjfk {
+    background-image: url(../img/btn_leftmenu_fankui@2x.png);
+}
+
+.sz {
+    background-image: url(../img/btn_leftmenu_shezhi@2x.png);
+}
+
+.tc {
+    background-image: url(../img/btn_leftmenu_tuichu@2x.png);
+}
+
+
+/*主内容*/
+
+#content {
+    width: 32rem;
+    float: left
+}
+
+
+/*主体内容*/
+
+.main {
+    width: 100%;
+    overflow: hidden;
+}
+
+.pdnr {
+    float: right;
+}
+
+.pdlb {
+    width: 6.4rem;
+    height: 100%;
+    background: #f3f3f3;
+    border-right: 0.05rem solid #dedede;
+    font-size: 1rem;
+    position: fixed;
+}
+
+.pdlb p {
+    margin: 1.5rem 0 1rem;
+}
+
+.pdlb .pdselected {
+    color: #246cff;
+    border-right: 1px solid #246cff;
+}
+
+.pdnr {
+    width: 25.25rem;
+}
+
+.pddet {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 0.4rem;
+    overflow: hidden;
+    padding: 0.4rem 0 0.4rem 0.6rem;
+    text-align: left;
+}
+
+.pddet img {
+    float: left;
+    margin-right: 0.6rem;
+    width: 10.5rem;
+}
+
+.pdnr h3 {
+    font-size: 1.2rem;
+    margin: 1.25rem 0 0.6rem;
+}
+
+.pdnr h6 {
+    font-size: 0.9rem;
+    color: #666666;
+}
+
+.pdnrhide {
+    display: none;
+}
+
+
+/*点击左上角的按钮时执行动画*/
+
+@-webkit-keyframes imove {
+    from {
+        -webkit-transform: translate(-19.25rem, 0)
+    }
+    to {
+        -webkit-transform: translate(0, 0)
+    }
+}
+
+@-webkit-keyframes omove {
+    from {
+        -webkit-transform: translate(0, 0)
+    }
+    to {
+        -webkit-transform: translate(-19.25rem, 0)
+    }
+}
+
+
+/*左侧导航栏出来*/
+
+@-webkit-keyframes lnavi {
+    from {
+        left: -19.25rem
+    }
+    to {
+        left: 0rem
+    }
+}
+
+@-webkit-keyframes lnavo {
+    from {
+        left: 0rem
+    }
+    to {
+        left: -19.25rem
+    }
+}

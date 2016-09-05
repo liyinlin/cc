@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <title></title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        html,
+        body {
+            width: 100%;
+            font-size: 20px;
+            background: #efeff4;
+            position: relative;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .head {
+            width: 100%;
+            height: 3rem;
+        }
+        
+        .a-1 {
+            font-size: 1.6rem;
+            float: left;
+            margin-left: 1rem;
+            font-family: "宋体";
+            font-weight: bold;
+        }
+        
+        .a-2 {
+            float: left;
+            margin-left: 12.5rem;
+            font-size: 1.5rem;
+        }
+        
+        .a-3 {
+            float: left;
+            margin-left: 10.75rem;
+            font-size: 1.2rem;
+            color: blue;
+        }
+        
+        .b-1 {
+            margin-top: 1.5rem;
+        }
+        
+        .b-1 img {
+            width: 100%;
+        }
+        
+        .c {
+            margin: 0.75rem 0 0 0.75rem;
+        }
+        
+        .c-1 {
+            height: 3.25rem;
+            width: 29.5rem;
+            background: #ffffff;
+            border-radius: 1rem 1rem 0 0;
+            font-size: 1.2rem;
+            padding: 1.25rem 0 0 0.5rem;
+        }
+        
+        #but1 {
+            font-size: 1rem;
+            border: none;
+        }
+        
+        .c-2 {
+            height: 3.25rem;
+            width: 29.5rem;
+            background: #ffffff;
+            border-radius: 0 0 1rem 1rem;
+            font-size: 1.2rem;
+            padding: 1.25rem 0 0 0.5rem;
+            margin-top: 0.05rem;
+        }
+        
+        #but2 {
+            font-size: 1rem;
+            border: none;
+        }
+        
+        .d-1 {
+            margin: 0.75rem 0 0 1.5rem;
+            font-size: 1rem;
+            color: #246cff;
+        }
+        
+        #d-2 {
+            width: 29.5rem;
+            line-height: 3.25rem;
+            border-radius: 1rem;
+            color: #FFFFFF;
+            background: #0000FF;
+            margin: 2rem 0 0 1rem;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        
+        #ds {
+            width: 100%;
+            height: 13rem;
+            line-height: 3rem;
+            text-align: center;
+            font-size: 1rem;
+            /*margin-top: 33.5rem;*/
+            background: #FFFFFF;
+            position: absolute;
+            color: #a8a8a8;
+            bottom: -10rem;
+        }
+        
+        #ds:before {
+            content: "^";
+            color: #a8a8a8;
+            border-bottom: 1.65rem solid #FFFFFF;
+            border-left: 2.5rem solid transparent;
+            border-right: 2.5rem solid transparent;
+            width: 6rem;
+            height: 0;
+            position: absolute;
+            top: -1.6rem;
+            left: 11rem;
+        }
+        
+        #foot-1 {
+            margin-top: 2.5rem;
+            height: 3rem;
+            width: 60%;
+        }
+        
+        #foot-1 img {
+            width: 60%;
+            margin-left: 10rem;
+        }
+        
+        #foot-2 img {
+            width: 60%;
+            margin-left: 10rem;
+        }
+        
+        #foot-2 {
+            margin-top: 1.75rem;
+            height: 3rem;
+            width: 60%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="a-1">
+            < </div>
+                <div class="a-2">
+                    <a href="login.html">登录</a>
+                </div>
+                <div class="a-3">
+                    <a href="ZC.html">注册</a>
+                </div>
+        </div>
+        <div class="b-1">
+            <img src="img/形状-1.png" />
+        </div>
+        <div class="c">
+            <div class="c-1">
+                账号:<input type="text" id="but1" placeholder="手机号或者邮箱" value="" />
+            </div>
+            <div class="c-2">
+                密码:<input type="text" id="but2" placeholder="手机号或者邮箱" value="" />
+            </div>
+        </div>
+        <div class="d-1">
+            忘记密码?
+        </div>
+        <div id="d-2">
+            登录
+        </div>
+        <div id="ds">
+            其他方式登录
+            <div id="foot-1">
+                <img src="img/wx.png" />
+            </div>
+            <div id="foot-2">
+                <img src="img/qq.png" />
+            </div>
+        </div>
+</body>
+<script src="js/reset.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var tim = null;
+    var flag = true;
+    var ds = document.getElementById('ds');
+    var html = document.getElementsByTagName("html")[0];
+    window.onload = window.onresize = function() {
+        var width = document.documentElement.clientWidth || document.body.clientWidth;
+        var f = (20 / 640) * width; //先有个比例这里用的20/520，的比例
+        html.style.fontSize = f + 'px';
+    }
+    var dl = document.getElementById("d-2");
+    var txt = document.getElementsByTagName('input');
+
+    function cli(el, fn) {
+        var starx, stary, endx, endy;
+        el.addEventListener('touchstart', function(e) {
+            var tces = e.touches[0];
+            starx = tces.clientX;
+            stary = tces.clientY;
+        }, false);
+        el.addEventListener('touchend', function(e) {
+            var tces = e.changedTouches[0];
+            endx = tces.clientX;
+            endy = tces.clientY;
+            if (Math.abs(endx - starx) < 6 || Math.abs(endy - stary) < 6) {
+                fn();
+            }
+        }, false)
+    }
+    cli(dl, function() {
+        if (txt[0].value == "") {
+            alert('请输入账号');
+        }
+        if (txt[1].value == "") {
+            alert('请输入密码');
+        } else {
+            alert('傻逼你真的点击了？');
+        }
+    })
+    cli(ds, function() {
+        if (flag) {
+            var n = -10;
+            tim = setInterval(function() {
+                n++;
+                ds.style.bottom = n + 'rem';
+                if (n == 0) {
+                    clearInterval(tim);
+                    flag = false;
+                }
+            }, 50)
+        } else {
+            var n = 0;
+            tim = setInterval(function() {
+                n--;
+                ds.style.bottom = n + 'rem';
+                if (n == -10) {
+                    clearInterval(tim);
+                    flag = true;
+                }
+            }, 50)
+        }
+    })
+</script>
+
+</html>

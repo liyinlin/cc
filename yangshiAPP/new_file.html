@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <title></title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        html,
+        body {
+            width: 100%;
+            font-size: 20px;
+            background: #efeff4;
+            position: relative;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .head {
+            width: 100%;
+            height: 3rem;
+            background: #FFFFFF;
+            position: relative;
+        }
+        
+        .a-1 {
+            font-size: 1.6rem;
+            float: left;
+            margin-left: 1rem;
+            font-family: "宋体";
+            font-weight: bold;
+        }
+        
+        .a-2 {
+            float: left;
+            margin-left: 10.5rem;
+            font-size: 1.5rem;
+        }
+        
+        .a-3 {
+            float: left;
+            margin-left: 9rem;
+            font-size: 1.2rem;
+            color: blue;
+        }
+        
+        #xian {
+            background: #FFFFFF;
+        }
+        
+        #xian img {
+            position: relative;
+            bottom: 0rem;
+            width: 100%;
+            float: left;
+        }
+        
+        .f1 {
+            width: 100%;
+            height: 7.75rem;
+            display: -webkit-box;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: reverse;
+        }
+        
+        .b1 {
+            -webkit-box-flex: 1;
+            border: 0.05rem solid #CCCCCC;
+            text-align: center;
+            padding: 1.5rem 0 0 0;
+        }
+        
+        .b2 {
+            -webkit-box-flex: 1;
+            border: 0.05rem solid #CCCCCC;
+            text-align: center;
+            padding: 1.5rem 0 0 0;
+        }
+        
+        .b3 {
+            -webkit-box-flex: 1;
+            border: 0.05rem solid #CCCCCC;
+            text-align: center;
+            padding: 1.5rem 0 0 0;
+        }
+        
+        .b3 img {
+            width: 2.2rem;
+            height: 2.2rem;
+        }
+        
+        .b2 img {
+            width: 2.2rem;
+            height: 2.2rem;
+        }
+        
+        .b1 img {
+            width: 2.2rem;
+            height: 2.2rem;
+        }
+        
+        .b1 p {
+            margin: 1rem 0 0 0;
+            font-size: 1.2rem;
+        }
+        
+        .b2 p {
+            margin: 1rem 0 0 0;
+            font-size: 1.2rem;
+        }
+        
+        .b3 p {
+            margin: 1rem 0 0 0;
+            font-size: 1.2rem;
+        }
+        
+        .f2 {
+            width: 100%;
+            height: 7.75rem;
+            display: -webkit-box;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: reverse;
+        }
+        
+        .b4 {
+            -webkit-box-flex: 1;
+            border: 0.05rem solid #CCCCCC;
+            text-align: center;
+            padding: 1.5rem 0 0 0;
+        }
+        
+        .b5 {
+            -webkit-box-flex: 1;
+            border: 0.05rem solid #CCCCCC;
+            text-align: center;
+            padding: 1.5rem 0 0 0;
+        }
+        
+        .b6 {
+            -webkit-box-flex: 1;
+            border: 0.05rem solid #CCCCCC;
+            text-align: center;
+            padding: 1.5rem 0 0 0;
+        }
+        
+        .b6 img {
+            width: 2.2rem;
+            height: 2.2rem;
+        }
+        
+        .b5 img {
+            width: 2.2rem;
+            height: 2.2rem;
+        }
+        
+        .b4 img {
+            width: 2.2rem;
+            height: 2.2rem;
+        }
+        
+        .b4 p {
+            margin: 1rem 0 0 0;
+            font-size: 1.2rem;
+        }
+        
+        .b5 p {
+            margin: 1rem 0 0 0;
+            font-size: 1.2rem;
+        }
+        
+        .b6 p {
+            margin: 1rem 0 0 0;
+            font-size: 1.2rem;
+        }
+        
+        .f3 {
+            width: 100%;
+            height: 7.75rem;
+            display: -webkit-box;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: reverse;
+        }
+        
+        .b7 {
+            -webkit-box-flex: 1;
+            border: 0.05rem solid #CCCCCC;
+            text-align: center;
+            padding: 1.5rem 0 0 0;
+        }
+        
+        .b8 {
+            -webkit-box-flex: 1;
+            border: 0.05rem solid #CCCCCC;
+            text-align: center;
+            padding: 1.5rem 0 0 0;
+        }
+        
+        .b9 {
+            -webkit-box-flex: 1;
+            border: 0.05rem solid #CCCCCC;
+            text-align: center;
+            padding: 1.5rem 0 0 0;
+        }
+        
+        .b9 img {
+            width: 2.2rem;
+            height: 2.2rem;
+        }
+        
+        .b8 img {
+            width: 2.2rem;
+            height: 2.2rem;
+        }
+        
+        .b7 img {
+            width: 2.2rem;
+            height: 2.2rem;
+        }
+        
+        .b7 p {
+            margin: 1rem 0 0 0;
+            font-size: 1.2rem;
+        }
+        
+        .b8 p {
+            margin: 1rem 0 0 0;
+            font-size: 1.2rem;
+        }
+        
+        .b9 p {
+            margin: 1rem 0 0 0;
+            font-size: 1.2rem;
+        }
+        
+        .b12 {
+            width: 10.5rem;
+            height: 7.75rem;
+            border: 0.05rem solid #CCCCCC;
+            text-align: center;
+            padding: 1.5rem 0 0 0;
+        }
+        
+        .b12 img {
+            width: 2.2rem;
+            height: 2.2rem;
+        }
+        
+        .b12 p {
+            margin: 1rem 0 0 0;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="a-1">
+            < </div>
+                <div class="a-2">
+                    全部频道
+                </div>
+                <div class="a-3">
+                    管理
+                </div>
+        </div>
+        <div id="xian">
+            <img src="img/形状-1.png" />
+        </div>
+        <div class="f1">
+            <div class="b1">
+                <img src="img/13.png" />
+                <p>电影</p>
+            </div>
+            <div class="b2">
+                <img src="img/12.png" />
+                <p>电剧</p>
+            </div>
+            <div class="b3">
+                <img src="img/11.png" />
+                <p>直播</p>
+            </div>
+        </div>
+        <div class="f2">
+            <div class="b4">
+                <img src="img/2.png" />
+                <p>新闻</p>
+            </div>
+            <div class="b5">
+                <img src="img/1.png" />
+                <p>体育</p>
+            </div>
+            <div class="b6">
+                <img src="img/14.png" />
+                <p>综艺</p>
+            </div>
+        </div>
+        <div class="f3">
+            <div class="b7">
+                <img src="img/19.png" />
+                <p>记录</p>
+            </div>
+            <div class="b8">
+                <img src="img/18.png" />
+                <p>动漫</p>
+            </div>
+            <div class="b9">
+                <img src="img/17.png" />
+                <p>少儿</p>
+            </div>
+        </div>
+        <div class="fc">
+            <div class="b12">
+                <img src="img/20.png" />
+                <p>记录</p>
+            </div>
+        </div>
+</body>
+<script src="js/reset.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var html = document.getElementsByTagName("html")[0];
+    window.onload = window.onresize = function() {
+        var width = document.documentElement.clientWidth || document.body.clientWidth;
+        var f = (20 / 640) * width; //先有个比例这里用的20/520，的比例
+        html.style.fontSize = f + 'px';
+    }
+</script>
+
+</html>

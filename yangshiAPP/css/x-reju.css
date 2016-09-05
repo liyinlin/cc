@@ -1,0 +1,109 @@
+﻿html,body {
+				width: 100%;
+				font-size: 20px;
+				font-family: "微软雅黑";
+				text-align: center;
+			}
+#header img {
+    height: 1.5rem;
+}
+#header div {
+    float: left;
+   /* width: 33.3%;*/
+}
+.userinfo {
+    text-align: left;width: 30%;
+}
+.title {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #d773f2;width: 40%;
+}
+.query {
+    text-align: right;width: 30%;
+}
+/*内容*/
+.xcontent{
+	width: 30.5rem;
+	margin: 0 auto;overflow: hidden;
+}
+.xtu1{
+	width: 100%;position: relative;
+	/*margin-left: 0.1rem;margin-top: 0.05rem;*/
+	overflow: hidden; padding-bottom: 0.1rem;
+}
+.xtu1bei{
+	width: 30.5rem;height: 15.2rem;float: left;
+}
+.xsan1{
+	width: 2.6rem;
+	height: 3rem;position: absolute;
+	top: -0.05rem;left: -0.1rem;
+}
+.xtu1 .xwai{display: block;}
+.xbo{
+	width: 3.8rem;display: block;position: absolute;
+	top: 5.725rem;left: 13.3rem;
+	
+}
+.xgeng{
+	background: rgba(0,0,0,0.5);width: 5.6rem;height: 1.8rem;
+	line-height: 1.8rem;text-align: center;font-size: 0.8rem;color: #ffffff;
+	position: absolute;    top: 13.4rem;right: 0rem;
+}
+.xshangfang{
+	width:99.6%;height: 3.7rem;overflow: hidden;/*position: relative;*/
+	border-left:1px solid #cbcbcb;border-right:1px solid #cbcbcb;
+	/*border-bottom:1px solid #cbcbcb;*/
+}
+.xshangfang span:nth-child(1){
+	font-size: 1.2rem;line-height: 3.7rem;color: #333333;float: left;
+	margin-left: 0.7rem;
+}
+.xshangfang span:nth-child(2){
+	font-size: 1.2rem;line-height: 3.7rem;color: #fda800;float: right;
+	/*margin-left: 17.8rem;*/margin-right: 0.7rem;
+}
+.xjishu{
+	width: 100%;height: 3.9rem;/*position: relative; */  /* padding-bottom: 0.1rem;*/ 
+}
+.xjishua,.xjishuaa{
+	display: none;width: 100%;height: 3.9rem;/*position: relative;*/    padding-bottom: 0.1rem;
+}
+.xjishu span,.xjishua span,.xjishuaa span{
+	    width: 19.94%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    float: left;
+    height: 3.8rem;
+    /*border: 1px solid #cbcbcb;*/ 
+}
+.xjishu span a,.xjishua span a,.xjishuaa span a{   width: 100%;
+	line-height: 3.8rem;text-align: center;font-size: 0.95rem;
+	color: #565656;display: block;border: 1px solid #cbcbcb;
+}
+.xjishu span a:hover{
+	color: red;
+}
+.xjishua span a:hover{
+	color: red;
+}
+.xjishuaa span a:hover{
+	color: red;
+}
+.xjishuaa span a:hover{
+	color: red;
+}
+/*.text1 {
+  width:200px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  -o-text-overflow:ellipsis;
+  -webkit-text-overflow:ellipsis;
+  -moz-text-overflow:ellipsis;
+  white-space:nowrap;
+}*/
+.xwaibao{
+	overflow: hidden;margin-bottom: 0.9rem;
+}

@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <style>
+        html {
+            font-size: 20px;
+        }
+        
+        body {
+            width: 100%;
+            text-align: center;
+        }
+        
+        #toubu {
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        .yibu {
+            width: 2rem;
+            height: 2rem;
+            float: left;
+            margin: 1rem 0rem 0rem 3rem;
+            font-size: 1.5rem;
+            color: black;
+        }
+        
+        .cttv {
+            width: 14rem;
+            height: 3rem;
+            font-size: 1.5rem;
+            margin: 1rem auto;
+        }
+        
+        .tup {
+            width: 1.6rem;
+            height: 1.7rem;
+            float: right;
+            margin: -3.5rem 1rem 0rem 0rem;
+        }
+        
+        .cai img {
+            width: 100%;
+            float: left;
+        }
+        
+        #vid {
+            width: 100%;
+        }
+        
+        .zimu {
+            width: 100%;
+            height: 8.55rem;
+        }
+        
+        .zimu h3 {
+            font-size: 1.2rem;
+            width: 11.55rem;
+            height: 1.1rem;
+            margin-top: 1.3rem;
+        }
+        
+        .zimu p {
+            font-size: 0.9rem;
+            width: 21.9rem;
+            height: 0.8rem;
+            margin-top: 2.1rem;
+            margin-left: 5px;
+            line-height: 1.75rem;
+            text-align: left;
+        }
+        
+        .kandian {
+            width: 100%;
+            height: 2rem;
+            margin-top: 2.2rem;
+        }
+        
+        .kandian img {
+            float: left;
+            /* width: 0.3rem;
+				height: 1.45rem; */
+            /* margin-left: -66.15rem; */
+            margin-top: 0px;
+            font-size: 1.2rem;
+        }
+        
+        .kandian p {
+            float: left;
+            /* width: 9.8rem;
+				height: 1rem;
+				margin-top: -1.5rem; */
+            font-size: 1.2rem;
+            margin-left: 0.9rem;
+        }
+        
+        .shi {
+            float: right;
+            font-size: 1.2rem;
+        }
+        
+        #yiquan {
+            overflow: hidden;
+            width: 100%;
+            float: left;
+        }
+        
+        .heng img {
+            width: 100%;
+            float: left;
+            font-size: 1.2rem;
+        }
+        
+        .tu img {
+            width: 9.8rem;
+            float: left;
+            margin-top: 0.5rem;
+        }
+        
+        .pian img {
+            width: 9.8rem;
+            float: left;
+            margin-top: 0.5rem;
+            margin-left: 1rem;
+        }
+        
+        .tupian img {
+            width: 9.8rem;
+            float: left;
+            margin-top: 0.5rem;
+            margin-left: 1rem;
+        }
+        
+        .kou {
+            float: left;
+            margin-top: 0.7rem;
+            font-size: 0.9rem;
+        }
+        
+        .lan {
+            float: left;
+            margin-top: 0.7rem;
+            font-size: 0.9rem;
+            margin-left: 5.65rem;
+        }
+        
+        .koulan {
+            float: left;
+            margin-top: 0.7rem;
+            font-size: 0.9rem;
+            margin-left: 5.65rem;
+        }
+        
+        #huigu {
+            width: 100%;
+            overflow: hidden;
+            margin-top: 10.55rem;
+        }
+        
+        #huigu img {
+            float: left;
+            /* width: 0.3rem;
+				height: 1.45rem; */
+            /* margin-left: -66.15rem; */
+            margin-top: 0px;
+            font-size: 1.2rem;
+        }
+        
+        #huigu p {
+            float: left;
+            /* width: 9.8rem;
+				height: 1rem;
+				margin-top: -1.5rem; */
+            font-size: 1.2rem;
+            margin-left: 0.9rem;
+        }
+        
+        .shiyi {
+            float: right;
+            font-size: 1.2rem;
+        }
+        
+        .xian {
+            width: 100%;
+            float: left;
+            font-size: 1.2rem;
+            margin-top: -0.4rem;
+        }
+        
+        .t img {
+            width: 9.8rem;
+            float: left;
+            margin-top: 0.5rem;
+        }
+        
+        .pia img {
+            width: 9.8rem;
+            float: left;
+            margin-top: 0.5rem;
+            margin-left: 1rem;
+        }
+        
+        .tupian1 img {
+            width: 9.8rem;
+            float: left;
+            margin-top: 0.5rem;
+            margin-left: 1rem;
+        }
+        
+        .ri {
+            float: left;
+            margin-top: 0.7rem;
+            font-size: 0.9rem;
+        }
+        
+        .zui {
+            float: left;
+            margin-top: 0.7rem;
+            font-size: 0.9rem;
+            margin-left: 5.65rem;
+        }
+        
+        .jia {
+            float: left;
+            margin-top: 0.7rem;
+            font-size: 0.9rem;
+            margin-left: 5.65rem;
+        }
+        
+        #tuijian {
+            width: 100%;
+            overflow: hidden;
+            margin-top: 11.55rem;
+        }
+        
+        #tuijian img {
+            float: left;
+            /* width: 0.3rem;
+				height: 1.45rem; */
+            /* margin-left: -66.15rem; */
+            margin-top: 0px;
+            font-size: 1.2rem;
+        }
+        
+        #tuijian p {
+            float: left;
+            /* width: 9.8rem;
+				height: 1rem;
+				margin-top: -1.5rem; */
+            font-size: 1.2rem;
+            margin-left: 0.9rem;
+        }
+        
+        .shier {
+            float: right;
+            font-size: 1.2rem;
+        }
+        
+        .xian {
+            width: 100%;
+            float: left;
+            font-size: 1.2rem;
+            margin-top: -0.4rem;
+        }
+        
+        .t3 img {
+            width: 9.8rem;
+            float: left;
+            margin-top: 0.5rem;
+        }
+        
+        .pia3 img {
+            width: 9.8rem;
+            float: left;
+            margin-top: 0.5rem;
+            margin-left: 1rem;
+        }
+        
+        .tupian3 img {
+            width: 9.8rem;
+            float: left;
+            margin-top: 0.5rem;
+            margin-left: 1rem;
+        }
+        
+        .ri3 {
+            float: left;
+            margin-top: 0.7rem;
+            font-size: 0.9rem;
+        }
+        
+        .zui3 {
+            float: left;
+            margin-top: 0.7rem;
+            font-size: 0.9rem;
+            margin-left: 5.65rem;
+        }
+        
+        .jia3 {
+            float: left;
+            margin-top: 0.7rem;
+            font-size: 0.9rem;
+            margin-left: 5.65rem;
+        }
+        
+        #pinlun {
+            width: 100%;
+            overflow: hidden;
+            margin-top: 12.55rem;
+        }
+        
+        #pinlun img {
+            float: left;
+            /* width: 0.3rem;
+				height: 1.45rem; */
+            /* margin-left: -66.15rem; */
+            margin-top: 0px;
+            font-size: 1.2rem;
+        }
+        
+        #pinlun p {
+            float: left;
+            /* width: 9.8rem;
+				height: 1rem;
+				margin-top: -1.5rem; */
+            font-size: 1.2rem;
+            margin-left: 0.9rem;
+        }
+        
+        .shisan {
+            float: right;
+            font-size: 1.2rem;
+        }
+        
+        .xian {
+            width: 100%;
+            float: left;
+            font-size: 1.2rem;
+            margin-top: -0.4rem;
+        }
+        
+        #daoyi {
+            width: 100%;
+            overflow: hidden;
+            margin-top: 2.55rem;
+        }
+        
+        #daoyi img {
+            float: left;
+            /* width: 0.3rem;
+				height: 1.45rem; */
+            /* margin-left: -66.15rem; */
+            margin-top: 0px;
+            font-size: 1.2rem;
+        }
+        
+        #daoyi p {
+            float: left;
+            /* width: 9.8rem;
+				height: 1rem;
+				margin-top: -1.5rem; */
+            font-size: 1.2rem;
+            margin-left: 0.9rem;
+            margin-top: 0.5rem;
+            color: blue;
+        }
+        
+        .shisi {
+            float: right;
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            color: #b6b6b6;
+        }
+        
+        #daoyi span {
+            float: left;
+            font-size: 0.9rem;
+            margin-top: 1.5rem;
+            text-align: left;
+            color: #737373;
+        }
+        
+        .tiaotiao {
+            width: 100%;
+            float: left;
+            margin-top: 1.2rem;
+        }
+        
+        .tiaotiao p {
+            float: left;
+            /* width: 9.8rem;
+				height: 1rem;
+				margin-top: -1.5rem; */
+            font-size: 1.2rem;
+            margin-left: 0.9rem;
+            margin-top: 0.5rem;
+            color: #c4c4c4;
+        }
+        
+        .tiaotiao img {
+            float: right;
+            /* width: 0.3rem;
+				height: 1.45rem; */
+            /* margin-left: -66.15rem; */
+            margin-top: 0px;
+            font-size: 1.2rem;
+        }
+        
+        .xian {
+            width: 100%;
+            float: left;
+            font-size: 1.2rem;
+            margin-top: -0.4rem;
+        }
+        
+        #daoer {
+            width: 100%;
+            overflow: hidden;
+            margin-top: 2.55rem;
+        }
+        
+        #daoer img {
+            float: left;
+            /* width: 0.3rem;
+				height: 1.45rem; */
+            /* margin-left: -66.15rem; */
+            margin-top: 0px;
+            font-size: 1.2rem;
+        }
+        
+        #daoer p {
+            float: left;
+            /* width: 9.8rem;
+				height: 1rem;
+				margin-top: -1.5rem; */
+            font-size: 1.2rem;
+            margin-left: 0.9rem;
+            margin-top: 0.5rem;
+            color: blue;
+        }
+        
+        .shiwu {
+            float: right;
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            color: #b6b6b6;
+        }
+        
+        #daoer span {
+            float: left;
+            font-size: 0.9rem;
+            margin-top: 1.5rem;
+            text-align: left;
+            color: #737373;
+        }
+        
+        .tiaotiao1 {
+            width: 100%;
+            float: left;
+            margin-top: 1.2rem;
+        }
+        
+        .tiaotiao1 p {
+            float: left;
+            /* width: 9.8rem;
+				height: 1rem;
+				margin-top: -1.5rem; */
+            font-size: 1.2rem;
+            margin-left: 0.9rem;
+            margin-top: 0.5rem;
+            color: #c4c4c4;
+        }
+        
+        .tiaotiao1 img {
+            float: right;
+            /* width: 0.3rem;
+				height: 1.45rem; */
+            /* margin-left: -66.15rem; */
+            margin-top: 0px;
+            font-size: 1.2rem;
+        }
+        
+        #zuihou {
+            width: 100%;
+            height: 4.4rem;
+            float: left;
+            background-color: #f5f5f5;
+            margin-top: 3.3rem;
+        }
+        
+        .xin img {
+            float: left;
+            margin-top: 1.35rem;
+            margin-left: 23.5rem;
+        }
+        
+        .xin1 img {
+            float: left;
+            margin-top: -2.4rem;
+            margin-left: 26.5rem;
+        }
+        
+        .xin2 img {
+            float: left;
+            margin-top: -2.4rem;
+            margin-left: 29.3rem;
+        }
+        
+        #zuihou input {
+            float: left;
+            margin-left: 2.0rem;
+            margin-top: -2.0rem;
+            font-size: 1.55rem;
+            border-radius: 2.5rem;
+            color: #dbdbdb;
+        }
+        
+        .xin4 img {
+            float: left;
+            margin-top: -1.8rem;
+            margin-left: 3.5rem;
+        }
+        
+        .xin5 {
+            float: left;
+            margin-left: 5.5rem;
+            margin-top: -1.3rem;
+            color: #dedede;
+        }
+    </style>
+</head>
+<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="js/jquery.easing.min.js" type="text/javascript"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/reset.js" type="text/javascript"></script>
+
+<body>
+    <div id="toubu">
+        <p class="yibu">
+            <a href="javascript:history.back(-1)">
+                <</a>
+        </p>
+        <p class="cttv">CTTV手机电视</p>
+        <a href="query.html"><img class="tup" src="img/未标题-1.png" /></a>
+    </div>
+    <div class="cai">
+        <img src="img/未标题-2.png" />
+    </div>
+    <video id="vid" controls width="600px">
+			<source src="video/1.ogg"></source>
+			<source src="video/1.mp4"></source>
+			您的浏览器不支持video标签
+		</video>
+    <!-- <input type="button" value="播放"/>
+		<input type="button" value="暂停"/>
+		<input type="button" value="快进"/> -->
+    <div class="zimu">
+        <h3>top系列-9日nba最佳</h3>
+        <p>8.7亿次播放<br> 剧情描述剧情描述剧情描述剧情描述剧情描述剧情描述 <br>剧情描述剧情描述剧情描述剧情描述
+        </p>
+    </div>
+    <div class="kandian">
+        <img src="../img/cc.png" alt="">
+        <p>2015-11-9期 看点</p>
+        <div class="shi">10 ></div>
+    </div>
+    <div id="yiquan">
+        <div class="heng"><img src="../img/未标题-6.png"></div>
+        <div class="tu"><img src="../img/未标题-3.png"></div>
+        <div class="pian"><img src="../img/未标题-4.png"></div>
+        <div class="tupian"><img src="../img/未标题-5.png"></div>
+        <div class="kou">9日最佳扣篮</div>
+        <div class="lan">9日最佳扣篮</div>
+        <div class="koulan">9日最佳扣篮</div>
+    </div>
+    <div id="huigu">
+        <img src="../img/cc.png" alt="">
+        <p>往期回顾</p>
+        <div class="shiyi">10 ></div>
+    </div>
+    <div id="erquan">
+        <div class="xian"><img src="../img/未标题-6.png"></div>
+        <div class="t"><img src="../img/未标题-3.png"></div>
+        <div class="pia"><img src="../img/未标题-4.png"></div>
+        <div class="tupian1"><img src="../img/未标题-5.png"></div>
+        <div class="ri">9日最佳扣篮</div>
+        <div class="zui">9日最佳扣篮</div>
+        <div class="jia">9日最佳扣篮</div>
+    </div>
+    <div id="tuijian">
+        <img src="../img/cc.png" alt="">
+        <p>推荐</p>
+        <div class="shier">10 ></div>
+    </div>
+    <div id="sanquan">
+        <div class="xian"><img src="../img/未标题-6.png"></div>
+        <div class="t3"><img src="../img/未标题-3.png"></div>
+        <div class="pia3"><img src="../img/未标题-4.png"></div>
+        <div class="tupian3"><img src="../img/未标题-5.png"></div>
+        <div class="ri3">9日最佳扣篮</div>
+        <div class="zui3">9日最佳扣篮</div>
+        <div class="jia3">9日最佳扣篮</div>
+    </div>
+    <div id="pinlun">
+        <img src="../img/cc.png" alt="">
+        <p>网友评论</p>
+        <div class="shisan">3.0万条</div>
+    </div>
+    <div class="xian"><img src="../img/未标题-6.png"></div>
+    <div id="daoyi">
+        <img src="../img/未标题-7.png" alt="">
+        <p>我就是阿翔</p>
+        <div class="shisi">2015-09-14</div>
+        <span>今天是胜利日，看了阅兵，感受到了各种正能量。事后想想，我是通过什么途 <br >径感受到的呢？媒介！这是一个时时刻刻都在我们身边，却容易被我们忽略的<br >东西......新华社和人民日..</span>
+    </div>
+    <div class="tiaotiao">
+        <p>查看全部20条回复</p>
+        <img src="../img/未标题-8.png" alt="">
+        <img src="../img/未标题-9.png" alt="">
+    </div>
+
+    <div class="xian"><img src="../img/未标题-6.png"></div>
+    <div id="daoer">
+        <img src="../img/未标题-7.png" alt="">
+        <p>我就是阿翔</p>
+        <div class="shiwu">2015-09-14</div>
+        <span>今天是胜利日，看了阅兵，感受到了各种正能量。事后想想，我是通过什么途 <br >径感受到的呢？媒介！这是一个时时刻刻都在我们身边，却容易被我们忽略的<br >东西......新华社和人民日..</span>
+    </div>
+    <div class="tiaotiao1">
+        <p>查看全部20条回复</p>
+        <img src="../img/未标题-8.png" alt="">
+        <img src="../img/未标题-9.png" alt="">
+    </div>
+
+    <div id="zuihou">
+        <div class="xin"><img src="../img/未标题-12.png"></div>
+        <div class="xin1"><img src="../img/未标题-13.png"></div>
+        <div class="xin2"><img src="../img/未标题-14.png"></div>
+        <input type="text">
+        <div class="xin4"><img src="../img/未标题-15.png"></div>
+        <div class="xin5">写评论</div>
+    </div>
+
+</body>
+<!-- 厚厚 -->
+<script type="text/javascript">
+    var html = document.getElementsByTagName("html")[0];
+
+    function getFontSize() {
+        var width = document.documentElement.clientWidth || document.body.clientWidth;
+        var fontSize = (20 / 640) * width; //先有个比例这里用的20/520，的比例
+        return fontSize;
+    }
+    html.style.fontSize = getFontSize() + "px";
+    window.onresize = function() {
+            setTimeout(function() {
+                html.style.fontSize = getFontSize() + "px";
+            }, 100);
+        }
+        /*播放器*/
+        // var vid = document.getElementById('vid');
+        /*var btns=document.getElementsByTagName('input');*/
+        // var box = document.getElementById('box');
+        /*btns*/
+        // [0].onclick = /*function()*/ {
+        //         box.innerHTML = '视频的总时长' + vid.duration + '<br>';
+        //         box.innerHTML += '当前的播放时间' + vid.currentTime + '<br>';
+        //         box.innerHTML += '当前的播放状态' + vid.paused;
+
+    //     }
+    /*btns*/
+    // [1].onclick = function() {
+    //         vid.play();
+    //     }
+    //     /*btns*/
+    //     [2].onclick = function() {
+    //         vid.pause();
+    //     }
+</script>
+
+</html>

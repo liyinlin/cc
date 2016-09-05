@@ -1,0 +1,117 @@
+
+			body {
+				width: 100%;
+				font-family: "微软雅黑";
+			}
+			
+			.tou {
+				overflow: hidden;
+				margin: 0.21rem 0;
+			}
+			
+			.tou div {
+				width: 33.33%;
+				float: left;
+				overflow: hidden;
+			}
+			
+			.tou div:nth-child(2) {
+				line-height: 0.36rem;
+				text-align: center;
+				font-size: 0.24rem;
+				color: #191919;
+			}
+			
+			.tou .toua img {
+				float: left;
+				width: 0.19rem;
+				height: 0.29rem;
+				margin-left: 0.17rem;
+			}
+			.z_cx {
+				width: 100%;
+				height: 3px;
+				background: linear-gradient(to right, #d570f3 0%, #5274ff 100%);
+				/*margin: 0.365rem auto 0;*/
+			}
+			.tou .hou img {
+				margin-right: 0.17rem;
+				float: right;
+				width: 0.36rem;
+				height: 0.36rem;
+			}
+			video{
+				width: 100%;
+				height: 3.51rem;
+			    background:#e5f5f2;
+			    background-size: cover;
+			     -moz-background-size:cover;
+;
+			}
+			.con .tit{
+				margin: -0.05rem 0 0.21rem 0;
+				overflow: hidden;
+			}
+			.con .tit img{
+				float: left;
+				width: 0.06rem;
+				height: 0.3rem;
+				margin: 0 0.14rem 0 0.16rem;
+			}
+			.con .tit span{
+				float: left;
+				line-height: 0.3rem;
+				color: #333333;
+				font-size: 0.24rem;
+			}
+			.cona{
+				width: 6.15rem;
+				margin: 0 auto;
+				padding: 0.08rem 0;
+				
+				overflow: hidden;
+			}
+			.cona img{
+					width: 2.17rem;
+					height: 1.46rem;
+					float: left;
+			}
+			 .cona p{
+			 	margin-top: 0.14rem;
+				line-height: 0.3rem;
+				font-size: 0.24rem;
+				color: #333333;
+			}
+			.cona1 div{
+				margin-top: 0.43rem;
+			}
+			.cona1{
+				float: left;
+				margin-left:0.25rem;
+				overflow: hidden;
+			}
+			.cona1 img{
+				margin-right: 0.06rem;
+				width: 0.19rem;
+				height: 0.19rem;
+				float: left;
+			}
+		    .cona1 span{
+		    	color: #969696;
+		    	line-height: 0.19rem;
+		    	font-size: 0.19rem;
+				margin-right: 0.18rem;
+				float: left;
+			}
+			.lin{
+				width: 6.15rem;
+				margin:0 auto;
+				height: 0px;
+				border-bottom: 0.02rem solid #dedede;
+			}
+			.lina{
+				width: 100%;
+				height: 0px;
+				border-bottom: 0.02rem solid #dedede;
+			}
+	

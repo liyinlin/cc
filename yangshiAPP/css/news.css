@@ -1,0 +1,287 @@
+body:after {
+    content: "";
+    height: 0;
+    clear: both;
+    overflow: hidden;
+}
+
+.outer {
+    width: 100%;
+    overflow: hidden;
+}
+
+#container {
+    width: 51.25rem;
+    overflow: hidden;
+    -webkit-transform: translate3d(-19.25rem, 0, 0);
+}
+
+
+/*左侧导航栏*/
+
+#leftside {
+    width: 17.25rem;
+    background: #1c1d22;
+    float: left;
+    padding: 0 1rem;
+}
+
+.username {
+    border-bottom: 0.1rem solid #dedede;
+    padding-bottom: 2rem;
+}
+
+.username a {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+}
+
+.username img {
+    float: left;
+    width: 6rem;
+    height: 6rem;
+}
+
+.username span {
+    float: left;
+    color: #fff;
+    margin: 2.75rem 0 0 2.2rem;
+    font-size: 1.15rem;
+}
+
+.home,
+.wdsc,
+.gkjl,
+.wdyy,
+.yjfk,
+.sz,
+.tc {
+    width: 100%;
+    height: 2.2rem;
+    margin-top: 1.7rem;
+    padding-left: 3.3rem;
+    text-align: left;
+    line-height: 2.2rem;
+    font-size: 1.5rem;
+    background-size: 2.2rem 2.2rem;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.home a {
+    color: #ff6600;
+}
+
+.wdsc a,
+.gkjl a,
+.wdyy a,
+.yjfk a,
+.sz a,
+.tc a {
+    color: #fff;
+}
+
+.home {
+    background-image: url(../img/btn_leftmenu_clickshouye@2x.png);
+}
+
+.wdsc {
+    background-image: url(../img/btn_leftmenu_shoucang@2x.png);
+}
+
+.gkjl {
+    background-image: url(../img/btn_leftmenu_lixian@2x.png);
+}
+
+.wdyy {
+    background-image: url(../img/btn_leftmenu_yuyue@2x.png);
+}
+
+.yjfk {
+    background-image: url(../img/btn_leftmenu_fankui@2x.png);
+}
+
+.sz {
+    background-image: url(../img/btn_leftmenu_shezhi@2x.png);
+}
+
+.tc {
+    background-image: url(../img/btn_leftmenu_tuichu@2x.png);
+}
+
+
+/*主内容*/
+
+#content {
+    width: 32rem;
+    float: left
+}
+
+
+/*大图滚动*/
+
+.swiper-container {
+    width: 100%;
+    height: 16rem;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 0.9rem;
+    background: #fff;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 16rem;
+}
+
+.swiper-pagination {
+    background: rgba(0, 0, 0, 0.5);
+    text-align: right;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 0;
+    height: 2.5rem;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 1rem 0.5rem;
+}
+
+.swiper-pagination-bullet {
+    width: 0.9rem;
+    height: 0.9rem;
+    line-height: 2.5rem;
+    background: #888e90;
+}
+
+.swiper-pagination-bullet-active {
+    background: #fff;
+}
+
+.bigpd {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    font-size: 1.2rem;
+    z-index: 11;
+    line-height: 2.5rem;
+    margin-left: 2rem;
+}
+
+.bphide {
+    display: none;
+}
+
+
+/*热播推荐*/
+
+.rbtj {
+    width: 90%;
+    height: 1.5rem;
+    padding: 0.75rem 0.9rem 0.75rem 2rem;
+    border-bottom: 1px solid #dedede;
+    margin: 0 auto;
+    background: url(../img/icon-tit-tbiao@2x.png) 0.9rem 0.9rem no-repeat;
+    background-size: 0.3rem 1.5rem;
+    font-family: "微软雅黑";
+    font-size: 1.2rem;
+    text-align: left;
+    line-height: 1.8rem;
+}
+
+.rbtj a {
+    font-size: 1rem;
+    float: right;
+}
+
+
+/*新闻列表*/
+
+.newslist {
+    width: 96.87%;
+    padding: 0.7rem 0 0.7rem 0.9rem;
+    margin: 0 auto;
+    overflow: hidden;
+    border-bottom: 0.05rem solid #dedede;
+    position: relative;
+    text-align: left;
+}
+
+.ejlb {
+    width: 10.5rem;
+    height: 7rem;
+    float: left;
+}
+
+.bfan {
+    position: absolute;
+    width: 4.6rem;
+    height: 4.6rem;
+    left: 4rem;
+    top: 2rem;
+}
+
+.newstitle {
+    float: left;
+    padding: 0.8rem 0 0 0.8rem;
+}
+
+.newslist h4 {
+    color: #000;
+    font-size: 0.9rem;
+    margin-bottom: 0.6rem;
+}
+
+.newslist p {
+    font-size: 0.8rem;
+    color: #bbbbbb;
+    line-height: 1rem;
+}
+
+
+/*点击左上角的按钮时执行动画*/
+
+@-webkit-keyframes imove {
+    from {
+        -webkit-transform: translate(-19.25rem, 0)
+    }
+    to {
+        -webkit-transform: translate(0, 0)
+    }
+}
+
+@-webkit-keyframes omove {
+    from {
+        -webkit-transform: translate(0, 0)
+    }
+    to {
+        -webkit-transform: translate(-19.25rem, 0)
+    }
+}
+
+
+/*左侧导航栏出来*/
+
+@-webkit-keyframes lnavi {
+    from {
+        left: -19.25rem
+    }
+    to {
+        left: 0rem
+    }
+}
+
+@-webkit-keyframes lnavo {
+    from {
+        left: 0rem
+    }
+    to {
+        left: -19.25rem
+    }
+}

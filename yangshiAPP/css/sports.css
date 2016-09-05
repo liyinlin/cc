@@ -1,0 +1,397 @@
+body:after {
+    content: "";
+    height: 0;
+    clear: both;
+    overflow: hidden;
+}
+
+.outer {
+    width: 100%;
+    overflow: hidden;
+}
+
+#container {
+    width: 51.25rem;
+    overflow: hidden;
+    -webkit-transform: translate3d(-19.25rem, 0, 0);
+}
+
+
+/*左侧导航栏*/
+
+#leftside {
+    width: 17.25rem;
+    background: #1c1d22;
+    float: left;
+    padding: 0 1rem;
+    position: relative;
+}
+
+.username {
+    border-bottom: 0.1rem solid #dedede;
+    padding-bottom: 2rem;
+}
+
+.username a {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+}
+
+.username img {
+    float: left;
+    width: 6rem;
+    height: 6rem;
+}
+
+.username span {
+    float: left;
+    color: #fff;
+    margin: 2.75rem 0 0 2.2rem;
+    font-size: 1.15rem;
+}
+
+.home,
+.wdsc,
+.gkjl,
+.wdyy,
+.yjfk,
+.sz,
+.tc {
+    width: 100%;
+    height: 2.2rem;
+    margin-top: 1.7rem;
+    padding-left: 3.3rem;
+    text-align: left;
+    line-height: 2.2rem;
+    font-size: 1.5rem;
+    background-size: 2.2rem 2.2rem;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.home a {
+    color: #ff6600;
+}
+
+.wdsc a,
+.gkjl a,
+.wdyy a,
+.yjfk a,
+.sz a,
+.tc a {
+    color: #fff;
+}
+
+.home {
+    background-image: url(../img/btn_leftmenu_clickshouye@2x.png);
+}
+
+.wdsc {
+    background-image: url(../img/btn_leftmenu_shoucang@2x.png);
+}
+
+.gkjl {
+    background-image: url(../img/btn_leftmenu_lixian@2x.png);
+}
+
+.wdyy {
+    background-image: url(../img/btn_leftmenu_yuyue@2x.png);
+}
+
+.yjfk {
+    background-image: url(../img/btn_leftmenu_fankui@2x.png);
+}
+
+.sz {
+    background-image: url(../img/btn_leftmenu_shezhi@2x.png);
+}
+
+.tc {
+    background-image: url(../img/btn_leftmenu_tuichu@2x.png);
+}
+
+
+/*主内容*/
+
+#content {
+    width: 32rem;
+    float: left
+}
+
+
+/*大图滚动*/
+
+.swiper-container {
+    width: 100%;
+    height: 16rem;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 0.9rem;
+    background: #fff;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 16rem;
+}
+
+.swiper-pagination {
+    background: rgba(0, 0, 0, 0.5);
+    text-align: right;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 0;
+    height: 2.5rem;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 1rem 0.5rem;
+}
+
+.swiper-pagination-bullet {
+    width: 0.9rem;
+    height: 0.9rem;
+    line-height: 2.5rem;
+    background: #888e90;
+}
+
+.swiper-pagination-bullet-active {
+    background: #fff;
+}
+
+.bigpd {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    font-size: 1.2rem;
+    z-index: 11;
+    line-height: 2.5rem;
+    margin-left: 2rem;
+}
+
+.bphide {
+    display: none;
+}
+
+
+/*热播推荐*/
+
+.rbtj {
+    width: 90%;
+    height: 1.5rem;
+    padding: 0.75rem 0.9rem 0.75rem 2rem;
+    border-bottom: 1px solid #dedede;
+    margin: 0 auto;
+    background: url(../img/icon-tit-tbiao@2x.png) 0.9rem 0.9rem no-repeat;
+    background-size: 0.3rem 1.5rem;
+    font-family: "微软雅黑";
+    font-size: 1.2rem;
+    text-align: left;
+    line-height: 1.8rem;
+}
+
+.rbtj a {
+    font-size: 1rem;
+    float: right;
+}
+
+
+/*赛事直播*/
+
+.onlive,
+.order {
+    width: 95%;
+    padding: 1rem 2.5%;
+    text-align: left;
+}
+
+.onlive {
+    border-bottom: 1px solid #ccc;
+}
+
+.teamlogo {
+    float: left;
+    width: 2.2rem;
+    height: 1.8rem;
+}
+
+.teamname {
+    float: left;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+}
+
+.score {
+    float: left;
+    font-size: 1.2rem;
+    margin-left: 17rem;
+    border-right: 1px solid #e9e9e9;
+    padding-right: 0.5rem;
+}
+
+.onlive li {
+    overflow: hidden;
+    margin: 0.5rem 0;
+}
+
+.onlive li div {
+    float: right;
+    font-size: 1.2rem;
+}
+
+.zbz {
+    float: right;
+    width: 6rem;
+    height: 2.2rem;
+}
+
+.order {
+    overflow: hidden;
+    /*line-height: 6.9rem;*/
+}
+
+.teamp {
+    float: left;
+    height: 6.9rem;
+    width: 7.4rem;
+    margin-top: 1rem;
+}
+
+.gamenr {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #a8a8a8;
+    width: 7rem;
+    text-align: justify;
+    margin-left: 8.5rem;
+    border-right: 1px solid #e9e9e9;
+    padding: 2rem 0.4rem 0 0;
+    height: 5rem;
+}
+
+.jmyy {
+    width: 6rem;
+    height: 2.2rem;
+    float: right;
+    margin-top: 2rem;
+}
+
+
+/*今日热点*/
+
+.spnewt {
+    text-align: left;
+    padding: 0.5rem 0.75rem 1rem;
+}
+
+.spnewt img {
+    float: left;
+    margin-bottom: 0.5rem;
+}
+
+.movied {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.movieon,
+.movietn {
+    width: 15rem;
+    float: left;
+    margin-left: 0.6rem;
+    position: relative;
+}
+
+.movieon a,
+.movietn a {
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+.movieon img,
+.movietn img {
+    width: 100%;
+    height: 10rem;
+    float: left;
+}
+
+.movieon .starplay,
+.movietn .starplay {
+    width: 4.6rem;
+    height: 4.6rem;
+    position: absolute;
+    top: 2.7rem;
+    left: 5.7rem;
+}
+
+.playinfo {
+    font-size: 0.9rem;
+    text-align: left;
+    margin: 0.5rem 0;
+}
+
+.movieon .news {
+    position: absolute;
+    width: 3.25rem;
+    height: 3.25rem;
+    left: 0;
+}
+
+.duration {
+    padding: 0.25rem;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+}
+
+
+/*点击左上角的按钮时执行动画*/
+
+@-webkit-keyframes imove {
+    from {
+        -webkit-transform: translate(-19.25rem, 0)
+    }
+    to {
+        -webkit-transform: translate(0, 0)
+    }
+}
+
+@-webkit-keyframes omove {
+    from {
+        -webkit-transform: translate(0, 0)
+    }
+    to {
+        -webkit-transform: translate(-19.25rem, 0)
+    }
+}
+
+
+/*左侧导航栏出来*/
+
+@-webkit-keyframes lnavi {
+    from {
+        left: -19.25rem
+    }
+    to {
+        left: 0rem
+    }
+}
+
+@-webkit-keyframes lnavo {
+    from {
+        left: 0rem
+    }
+    to {
+        left: -19.25rem
+    }
+}

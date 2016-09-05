@@ -1,0 +1,24 @@
+﻿html,body {
+				width: 100%;
+				font-size: 100px;
+				font-family: "微软雅黑";
+				text-align: center;
+			}
+#header img {
+    height: 0.3rem;
+}
+#header div {
+    float: left;
+   /* width: 33.3%;*/
+}
+.userinfo {
+    text-align: left;width: 30%;
+}
+.title {
+    font-size: 0.3rem;
+    text-align: center;
+    color: #d773f2;width: 40%;
+}
+.query {
+    text-align: right;width: 30%;
+}

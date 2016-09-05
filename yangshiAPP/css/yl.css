@@ -1,0 +1,253 @@
+
+			html,
+			body {
+				width: 100%;
+				font-family: "微软雅黑";
+				text-align: center;
+			}
+			
+			#datu {
+				position: relative;
+				z-index: 0;
+				width: 100%;
+				height: 3.2rem;
+				overflow: hidden;
+			}
+			
+			#datu .tu1 {
+				height: 3.2rem;
+				overflow: hidden;
+			}
+			
+			#datu .tu1 a:nth-child(1) {
+				display: block;
+				height: 3.2rem;
+				background: green;
+				background-size: 100% 100%;
+				float: left;
+			}
+			
+			#datu .tu1 a:nth-child(2) {
+				display: block;
+				height: 3.2rem;
+				background: url(../img/推荐位轮播图.jpg) 0 0 no-repeat;
+				float: left;
+				background-size: 100% 100%;
+			}
+			
+			#datu .tu1 a:nth-child(3) {
+				display: block;
+				height: 3.2rem;
+				background: gray;
+				float: left;
+			}
+			
+			#datu .tu1 a:nth-child(4) {
+				display: block;
+				height: 3.2rem;
+				background: green;
+				background-size: 100% 100%;
+				float: left;
+			}
+			
+			#datu .tu1 a:nth-child(5) {
+				display: block;
+				height: 3.2rem;
+				background: url(../img/推荐位轮播图.jpg) 0 0 no-repeat;
+				float: left;
+				background-size: 100% 100%;
+			}
+			
+			.tu2 {
+				position: relative;
+				z-index: 2;
+				width: 100%;
+				background: rgba(106, 104, 95, 0.5);
+				margin-top: -.05rem;
+				overflow: hidden;
+			}
+			
+			.tu2 span {
+				font-size: 0.24rem;
+				margin-left: 0.27rem;
+				line-height: 0.5rem;
+				display: block;
+				height: 0.5rem;
+				float: left;
+			}
+			
+			.tu2 ul {
+				overflow: hidden;
+				float: right;
+			}
+			
+			.tu2 ul li {
+				margin-top: 0.145rem;
+				border-radius: 50%;
+				width: 0.21rem;
+				height: 0.21rem;
+				background: white;
+				margin-right: 0.15rem;
+				float: left;
+			}
+			
+			.clear {
+				clear: both;
+				height: 0px;
+				overflow: hidden;
+			}
+			
+			.tuijian a {
+				font-size: 0.24rem;
+				margin: 0.07rem 0 0 0.08rem;
+				display: block;
+				padding: 0.13rem 0.22rem;
+				border: 0.02rem solid #cccccc;
+				border-radius: 0.22rem/50%;
+				background-color: white;
+				color: #cccccc;
+				float: left;
+			}
+			
+			.tuijian .t a:nth-child(1) {
+				border-color: #5485ff;
+				color: #5485ff;
+			}
+			
+			.tuijian span {
+				margin-top: 0.3rem;
+				width: 0.2rem;
+				height: 0.1rem;
+				display: block;
+				margin-right: 0.08rem;
+				background: url(../img/icon_jiantou_down@2x.png) 0 0 no-repeat;
+				background-size: 100% 100%;
+				float: right;
+			}
+			
+			.tuijian .c {
+				display: none;
+			}
+			
+			.tuijian .t,
+			.tuijian .c {
+				overflow: hidden;
+			}
+			
+			.content {
+				width: 95%;
+				margin: 0 auto;
+			}
+			
+			.content .ca {
+				width: 100%;
+			}
+			
+			.content .a1 {
+				overflow: hidden;
+				margin: 0.22rem 0 0.09rem;
+			}
+			
+			.content .a2 {
+				width: 100%;
+				height: 0.02rem;
+				background: #dedede;
+			}
+			
+			.content .a3 {
+				margin-top: 0.09rem;
+				overflow: hidden;
+			}
+			
+			.content .a1 img {
+				width: 0.06rem;
+				height: 0.3rem;
+				margin-left: 0.04rem;
+				float: left;
+			}
+			
+			.content .a1 span {
+				float: left;
+				margin: 0 0.12rem 0 0.07rem;
+				color: #333333;
+				font-size: 0.24rem;
+				line-height: 0.3rem;
+			}
+			
+			.content .a1 a {
+				font-size: 0.18rem;
+				color: #5d5d5d;
+				float: right;
+				line-height: 0.3rem;
+				margin-right: 0.18rem;
+			}
+			
+			.content .a3 div {
+				float: left;
+			}
+			
+			.content .a3a {
+				margin-right: 0.09rem;
+				width: 1.96rem;
+				float: left;
+				text-align: center;
+				overflow: hidden;
+			}
+			
+			.content .a3a img {
+				width: 1.96rem;
+				height: 2.94rem;
+				float: left;
+			}
+			
+			.content .a3 p {
+				font-size: 0.18rem;
+				color: #333333;
+				line-height: 0.34rem;
+				float: left;
+			}
+			
+			.content .a3b {
+				margin-right: 0.09rem;
+				width: 1.96rem;
+				float: left;
+				text-align: center;
+				overflow: hidden;
+			}
+			
+			.content .a3b img {
+				width: 1.97rem;
+				height: 1.31rem;
+				float: left;
+			}
+			
+			.content .marn {
+				margin-right: 0px !important;
+			}
+			
+			.content .bozui {
+				width: 2.99rem;
+				height: 2.33rem;
+				margin-right: 0.07rem;
+			}
+			
+			.content .bozui img {
+				width: 2.99rem;
+				height: 1.99rem;
+			}
+			
+			.searchmore {
+				margin-top: 0.7rem;
+				width: 100%;
+				background-color: #f5f5f5;
+				overflow: hidden;
+			}
+			
+			.searchmore p {
+				float: left;
+				width: 50%;
+				text-align: center;
+				font-size: 0.2rem;
+				color: #979997;
+				line-height: 0.45rem;
+			}
